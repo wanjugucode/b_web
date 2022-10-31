@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Home page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quotes.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+
+      rel="stylesheet">
+      <div class="new_logo">
+      <img src="2 2.png" alt="">
+    </div>
+      <div class="menu">
+        <input type="checkbox" id="toggle" />
+        <label id="show-menu" for="toggle">
+          <div class="icon">
+            <i class="material-icons md-35 toggleBtn menuBtn">menu</i>
+            <div id="overlay1">Click here</div>
+
+            
+          </div>
+
+          <div class="btn">
+            <i class="material-icons md-36">lightbulb</i>
+              <div id="overlay">
+                <a href="">Legal advice</a>
+              </div>
+            </div>
+
+          <div class="btn"> 
+            <i class="material-icons md-36">gavel</i>
+              <div id="overlay">
+                <a href="">Justice</a>
+              </div>
+          </div>
+
+          <div class="btn">
+            <i class="material-icons md-36">groups</i>
+              <div id="overlay"> <a href="abouts.html">About us</a></div>
+          </div>
+
+          <div class="btn">
+            <i class="material-icons md-36">balance</i>
+            <div id="overlay">
+              <a href="services.html"> Areas of law</a>
+            </div>
+          </div>
+
+          <div class="btn">
+            <i class="material-icons md-36">phone</i>
+              <div id="overlay">
+                <a href="contacts.html">Contacts</a>
+          </div>
+
+          </div>
+           <div class="btn">
+            <i class="material-icons md-36">help</i>
+              <div id="overlay">  
+                <a href="faq.html">   FQAs</a>
+                </div>
+          </div>
+
+          <div class="btn">
+            <i class="material-icons md-36">update</i>
+              <div id="overlay">
+                <a href="">In progress</a>
+              </div>
+            </div>
+
+          <div class="btn">
+            <i class="material-icons md-36">update</i>
+              <div id="overlay">
+                <a href="">In progress</a>
+              </div>
+          </div>
+
+        </label>
+      </div>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides">
+        <q>To win one hundred victories in one hundred battles is not the acme of skill. To subdue the enemy without fighting is theacme of skill. </q>
+        <p class="author">-  Sun Tzu</p>
+      </div>
+      
+      <div class="mySlides">
+        <q>Bryant's Law zealously advocates for the clients best interests solely based upon the clients instructions.</q>
+        <p class="author">-  Bryant's </p>
+      </div>
+      
+      <div class="mySlides">
+        <q>  Knowledge is a treasure but practice is the key to it.</q>
+        <p class="author">-  Lao tzu </p>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+                <p id="contacts">
+                   <b>We are on 24/7</b> 
+                    <br>
+                    +012 345 6789
+                    <br>
+                    info@example.com
+                 </p>
+
+<script>
+  const slide = document.getElementsByClassName("slide");
+  const leftSlide = document.querySelector(".left");
+  const rightSlide = document.querySelector(".right");
+
+  leftSlide.addEventListener("click", IncreaseZero);
+  function IncreaseZero() {
+    for (var i = 0; i < slide.length; i++) {				
+      slide[0] = slide[i];
+      i = i++;
+    }
+  }
+
+  rightSlide.addEventListener("click", DecreaseZero);
+  function DecreaseZero() {
+    for (var i = 0; i < slide.length; i++) {				
+      slide[0] = slide[i];
+      i = i--;
+    }
+  }
+</script>
+<script src="index.js"></script>
+</body>
+</html>
